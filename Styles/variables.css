@@ -1,0 +1,23 @@
+
+:root {
+  --main-font: "DM Sans", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --size-heading: 20px;
+
+  --gray: #666666;
+  --purple: #E70FAA;
+  --blue: #00C0FD;
+  
+
+  -angle: 0deg;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--gray);
+}
