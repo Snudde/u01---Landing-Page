@@ -9,6 +9,7 @@
   --weight-bold: 700;
 
   --size-heading: 20px;
+  --size-heading-d: 42px;
 
   --gray: #666666;
   --lightgray: #a7a7a7;
@@ -28,13 +29,7 @@ body {
     height: 100vh;
 }
 
-.header {
-  color: var(--darkblue);
-  font-size: var(--size-heading);
-  font-weight: var(--weight-bold);
-  margin-bottom: 20px
-  
-}
+
 
 .wrapper {
   display: flex;

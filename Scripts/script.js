@@ -6,9 +6,10 @@ hamMenu.addEventListener('click', () => {
     offScreenMenu.classList.toggle('active');
 })
 
-const imageDiv = document.querySelector('.image');
-const img = imageDiv.querySelector('img');
-if (img) {
-  imageDiv.style.backgroundImage = `url('${img.src}')`;
-  img.style.display = 'none'; // Optionally hide the img element
-}
+document.querySelectorAll('.project-card .image').forEach(imageDiv => {
+  const img = imageDiv.querySelector('img');
+  if (img) {
+    imageDiv.style.backgroundImage = `url('${img.src}')`;
+    img.style.display = 'none';
+  }
+});
