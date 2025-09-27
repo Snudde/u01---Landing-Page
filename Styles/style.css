@@ -120,7 +120,9 @@ header {
     padding-bottom: 10px;
 }
 
-.home h1 {
+
+
+.gradient-text {
     background: linear-gradient(90deg, var(--blue), var(--purple));
   -webkit-background-clip: text; /* Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Safari/Chrome */
@@ -180,3 +182,153 @@ header {
         --angle: 360deg;
     }
 }
+
+.about-container {
+    padding: 20px 0 10px 0;
+    border-bottom: 2px solid #EBEAED;
+    margin-bottom: 20px;
+    
+}
+
+.about-container .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.about .title {
+    font-family: var(--heading-font);
+    font-weight: var(--weight-regular);
+    font-size: 13px;
+}
+
+.about .label {
+    font-size: 9px;
+    font-weight: var(--weight-thicker);
+    color: var(--darkgreen);
+    background-color: var(--green);
+    padding:5px 10px;
+    border-radius: 100px;
+}
+
+.about .company {
+    color: var(--lightgray);
+    font-size: 12px;
+}
+
+.about .location {
+    color: var(--lightgray);
+    font-size: 12px;
+    display: block;
+    align-self: flex-start;
+}
+
+.about .date {
+    color: var(--lightgray);
+    font-size: 12px;
+}
+
+.about .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header-section {
+    margin-bottom: 30px;
+}
+
+.technologies-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.technologies .header-container {
+    margin-bottom: 20px;
+}
+
+.technologies-container figure {
+    width: 20%;
+}
+
+.technologies-container svg {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 40px 0;
+}
+
+.projects .header-container {
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.project-card {
+  
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 100px 0px #00000033;
+
+}
+
+.project-card .image {
+    background-size: cover;
+    height: 260px;
+}
+
+.project-card .info {
+    padding: 20px;
+}
+
+.project-card .title {
+    font-size: 18px;
+    font-weight: var(--weight-medium);
+    color: #000;
+}
+
+.project-card .description {
+    margin:  20px 0;
+}
+
+.project-card .footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.project-card .tech {
+    font-size: 14px;
+}
+
+.project-card .tech span {
+    
+    font-weight: var(--weight-bold);
+}
+
+.project-card .footer a {
+color: #000;
+display: inline-flex;
+  align-items: center;
+}
+
+.project-card .footer a svg {
+  margin-right: 5px;
+}
+

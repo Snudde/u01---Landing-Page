@@ -5,13 +5,18 @@
 
   --weight-regular: 400;
   --weight-medium: 500;
+  --weight-thicker: 600;
   --weight-bold: 700;
 
   --size-heading: 20px;
 
   --gray: #666666;
+  --lightgray: #a7a7a7;
   --purple: #E70FAA;
   --blue: #00C0FD;
+  --darkblue: #42446E;
+  --green: #D7FFE0;
+  --darkgreen: #018C0F;
   
 
   -angle: 0deg;
@@ -20,4 +25,23 @@
 body {
     font-family: var(--main-font);
     color: var(--gray);
+    height: 100vh;
+}
+
+.header {
+  color: var(--darkblue);
+  font-size: var(--size-heading);
+  font-weight: var(--weight-bold);
+  margin-bottom: 20px
+  
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
 }
