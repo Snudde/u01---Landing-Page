@@ -72,6 +72,7 @@ nav {
 .main-menu a {
   text-decoration: none;
   font-weight: var(--weight-medium);
+  font-family: var(--secondary-font);
   font-size: 20px;
   line-height: 26px;
   color: var(--gray);
@@ -103,7 +104,10 @@ header {
   color: var(--darkblue);
   font-size: var(--size-heading);
   font-weight: var(--weight-bold);
-  margin-bottom: 20px
+  margin-bottom: 20px;
+
+  letter-spacing: -0.4px;
+   
   
 }
 
@@ -124,7 +128,7 @@ header {
 }
 
 .home span {
-  font-family: var(--heading-font);
+
   font-weight: var(--weight-bold);
   font-size: var(--size-heading);
   display: block;
@@ -208,23 +212,27 @@ header {
 }
 
 .about .title {
-  font-family: var(--heading-font);
+ 
   font-weight: var(--weight-regular);
   font-size: 13px;
 }
 
 .about .label {
   font-size: 9px;
-  font-weight: var(--weight-thicker);
-  color: var(--darkgreen);
-  background-color: var(--green);
-  padding: 5px 10px;
-  border-radius: 100px;
+    font-weight: var(--weight-thicker);
+    color: var(--darkgreen);
+    background-color: var(--green);
+    padding: 0px 16px;
+    border-radius: 100px;
+    line-height: 26px;
+ 
 }
 
 .about .company {
   color: var(--lightgray);
   font-size: 12px;
+  font-weight: var(--weight-medium);
+
 }
 
 .about .location {
@@ -232,11 +240,15 @@ header {
   font-size: 12px;
   display: block;
   align-self: flex-start;
+  font-weight: var(--weight-medium);
+ 
 }
 
 .about .date {
   color: var(--lightgray);
   font-size: 12px;
+ 
+    font-weight: var(--weight-medium);
 }
 
 .about .column {
@@ -326,16 +338,18 @@ footer {
 
 .project-card .tech {
   font-size: 14px;
+  font-weight: var(--weight-light);
 }
 
 .project-card .tech span {
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-regular);
 }
 
 .project-card .footer a {
   color: #000;
   display: inline-flex;
   align-items: center;
+  font-weight: var(--weight-regular);
 }
 
 .project-card .footer a svg {
@@ -431,11 +445,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .social-links-menu ul {
     display: flex;
-    gap: 10px !important;
+    gap: 20px !important;
   }
 
   /* Hide hamburger menu on desktop */
@@ -460,7 +475,7 @@ footer {
   }
   .off-screen-menu.main-menu ul {
     display: flex;
-    gap: 2em;
+    gap: 50px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -500,6 +515,92 @@ footer {
     font-size: var(--size-heading-d);
     
   }
+
+  .about-header-section p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about-header-section {
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+.about .title {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.about .column {
+  flex-direction: row;
+          gap: 20px;
+}
+.about-container {
+  padding: 20px 0;
+}
+
+.about-work-section {
+  margin-bottom: 50px;
+}
+
+.technologies-container {
+  margin-bottom: 80px;
+}
+
+.project-card .title {
+  font-size: 28px;
+  
+}
+
+.project-card .description {
+  font-weight: var(--weight-light);
+  font-size: 18px;
+}
+
+
+
+.project-card .tech span {
+  font-size: 16px;
+}
+
+.project-card .footer a {
+  font-size: 16px;
+}
+
+.project-card {
+  box-shadow: 2px 2px 100px 0px #00000033;
+}
+
+.projects .header-container {
+  margin-bottom: 100px;
+}
+
+.project-card .info {
+    padding: 25px;
+}
+
+.project-card .footer {
+  margin-top: 30px;
+}
+
+main.contact {
+    margin-top: 20vh;
+}
+
+.contact .header {
+    font-size: 58px;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+}
+
+.contact .header-container a {
+    font-size: 58px;
+    letter-spacing: -1px;
+}
+
+.logo {
+    width: 100px;
+}
 
   footer {
     text-align: center;

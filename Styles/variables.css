@@ -1,8 +1,9 @@
 
 :root {
-  --main-font: "DM Sans", sans-serif;
-  --heading-font: "Poppins", sans-serif;
+   --secondary-font: "DM Sans", sans-serif;
+  --main-font: "Poppins", sans-serif;
 
+  --weight-light: 300;
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-thicker: 600;
