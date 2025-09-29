@@ -3,13 +3,13 @@
 /* HEADER AND NAV */
 
 .off-screen-menu {
-  background-color: #fff;
+  background-color: var(--white);
   height: 100vh;
   width: 100%;
-  max-width: 450px;
+  
   position: fixed;
   top: 0;
-  right: -450px;
+  right: -100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +78,10 @@ nav {
   color: var(--gray);
 }
 
+.main-menu a:hover {
+  color: var(--purple) !important;
+}
+
 .social-links-menu {
   width: 100%;
   margin-top: 30px;
@@ -93,6 +97,14 @@ nav {
 .social-links-menu li {
   display: inline-block;
   padding-bottom: 20px;
+}
+
+.social-links-menu svg path {
+  transition: all 0.3s ease;
+}
+
+.social-links-menu svg:hover path {
+    fill: var(--purple) !important;
 }
 
 header {
@@ -115,7 +127,13 @@ header {
   width: 70px;
   z-index: 10;
   position: relative;
+  transition: all .3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
 
 .logo img {
   width: 100%;
@@ -141,7 +159,10 @@ header {
   -webkit-text-fill-color: transparent; /* Safari/Chrome */
   background-clip: text; /* Standard (not supported everywhere yet) */
   color: transparent; /* fallback */
+  transition: all 0.3s ease;
 }
+
+
 
 .home .header-container {
   margin-bottom: 40px;
@@ -285,6 +306,16 @@ footer {
   text-align: center;
   font-size: 12px;
   padding: 40px 0;
+  margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dm-switch-container {
+    position: absolute;
+    right: 0;
 }
 
 .projects .header-container {
@@ -320,7 +351,7 @@ footer {
 .project-card .title {
   font-size: 18px;
   font-weight: var(--weight-medium);
-  color: #000;
+  color: var(--black);
 }
 
 .project-card .description {
@@ -346,10 +377,14 @@ footer {
 }
 
 .project-card .footer a {
-  color: #000;
+  color: var(--black);
   display: inline-flex;
   align-items: center;
   font-weight: var(--weight-regular);
+}
+
+.project-card .footer a:hover {
+    color: var(--purple) !important;
 }
 
 .project-card .footer a svg {
@@ -366,10 +401,20 @@ footer {
   margin-bottom: 20px;
 }
 
+.contact .header-container a:hover {
+  transform:scale(1.1);
+}
+
 /* =============================
      Desktop Styles (min-width: 900px)
      ============================= */
 @media (min-width: 900px) {
+
+main.about, main.technologies, main.projects {
+    margin-top: 100px;
+}
+
+
   .technologies-container > figure {
     width: 100%;
     box-sizing: border-box;
@@ -464,14 +509,15 @@ footer {
     height: auto;
     width: auto;
     max-width: none;
-    background: none;
+    background-color: var(--white);
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     text-align: right;
     display: flex;
-    transition: none;
+    
     z-index: auto;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
   }
   .off-screen-menu.main-menu ul {
     display: flex;

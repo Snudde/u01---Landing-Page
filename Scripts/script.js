@@ -13,3 +13,24 @@ document.querySelectorAll('.project-card .image').forEach(imageDiv => {
     img.style.display = 'none';
   }
 });
+
+const toggleCheckbox = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Apply saved theme on load
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  body.classList.add("dark-mode");
+  toggleCheckbox.checked = true;
+}
+
+// Toggle theme + save preference
+toggleCheckbox.addEventListener("change", () => {
+  if (toggleCheckbox.checked) {
+    body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+  } else {
+    body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light");
+  }
+});

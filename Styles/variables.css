@@ -19,18 +19,129 @@
   --darkblue: #42446E;
   --green: #D7FFE0;
   --darkgreen: #018C0F;
+  --white: #FFFFFF;
+  --black: #000000;
   
 
   -angle: 0deg;
 }
 
+* {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--gray);
+    background-color: var(--white);
     height: 100vh;
 }
 
+/* Toggle container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
 
+/* Hide the checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--lightgray);
+  border-radius: 32px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-size: 16px;
+}
+
+/* Knob */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: transform 0.3s;
+  z-index: 1; /* keep knob above icons */
+}
+
+/* Icons */
+.icon {
+  z-index: 0; /* sit behind knob */
+  pointer-events: none; /* not clickable */
+}
+
+/* Checked state */
+input:checked + .slider {
+  background-color: var(--purple);
+}
+
+input:checked + .slider::before {
+  transform: translateX(28px);
+}
+
+body.dark-mode {
+  
+    color: var(--white);
+    background-color: var(--black);
+
+}
+
+body.dark-mode .header {
+  color: var(--white);
+}
+
+body.dark-mode .main-menu a {
+  color: var(--white);
+}
+
+body.dark-mode .social-links-menu svg path {
+  fill: var(--white);
+}
+
+body.dark-mode .project-card {
+  background-color: var(--gray);
+}
+
+body.dark-mode .project-card .title, body.dark-mode .project-card .title, body.dark-mode .project-card .footer a {
+  color: var(--white);
+}
+
+body.dark-mode .project-card .footer svg path {
+  fill: var(--white);
+}
+
+body.dark-mode .ham-menu span {
+  background-color: var(--white);
+}
+
+body.dark-mode .off-screen-menu {
+  background-color: var(--black);
+}
+
+body.dark-mode .project-card {
+        box-shadow: 2px 2px 20px 0px #fff;
+}
+
+body.dark-mode .about-header-section p, body.dark-mode .header-container p {
+  color: var(--lightgray);
+}
 
 .wrapper {
   display: flex;
