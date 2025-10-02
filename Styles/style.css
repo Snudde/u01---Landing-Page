@@ -316,6 +316,7 @@ footer {
 .dm-switch-container {
     position: absolute;
     right: 0;
+    top: -20px;
 }
 
 .projects .header-container {
@@ -397,7 +398,7 @@ footer {
 
 .contact a {
   display: block;
-  font-size: var(--size-heading);
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -408,10 +409,17 @@ footer {
 /* =============================
      Desktop Styles (min-width: 900px)
      ============================= */
+
+
 @media (min-width: 900px) {
 
 main.about, main.technologies, main.projects {
     margin-top: 100px;
+}
+
+.dm-switch-container {
+   
+    top: auto;
 }
 
 
@@ -521,7 +529,7 @@ main.about, main.technologies, main.projects {
   }
   .off-screen-menu.main-menu ul {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -547,7 +555,7 @@ main.about, main.technologies, main.projects {
   }
 
   .home .header-container h1, .home .header-container span{
-    font-size: 58px;
+    font-size: 38px;
     letter-spacing: -1px;
   }
 
@@ -634,13 +642,13 @@ main.contact {
 }
 
 .contact .header {
-    font-size: 58px;
+    font-size: 38px;
     letter-spacing: -1px;
     margin-bottom: 50px;
 }
 
 .contact .header-container a {
-    font-size: 58px;
+    font-size: 38px;
     letter-spacing: -1px;
 }
 
@@ -656,4 +664,20 @@ main.contact {
 }
 
   
+}
+
+@media (min-width: 1160px) {
+  .home .header-container h1, .home .header-container span {
+    font-size: 58px;
+  }
+
+   .off-screen-menu.main-menu ul {
+    
+    gap: 50px;
+ 
+  }
+
+  .contact .header-container a {
+    font-size: 58px;
+  }
 }
