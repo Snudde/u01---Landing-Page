@@ -367,6 +367,17 @@ footer {
   font-weight: 300;
 }
 
+.dark-mode .nm-icon svg path {
+    fill: #fff;
+}
+.main-menu a.active {
+    color: var(--purple);
+}
+
+.dark-mode .main-menu a.active {
+    color: var(--purple);
+}
+
 .project-card .tech {
   font-size: 14px;
   font-weight: var(--weight-light);
