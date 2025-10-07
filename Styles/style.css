@@ -1,12 +1,10 @@
-
-
 /* HEADER AND NAV */
 
 .off-screen-menu {
   background-color: var(--white);
   height: 100vh;
   width: 100%;
-  
+
   position: fixed;
   top: 0;
   right: -100%;
@@ -104,7 +102,7 @@ nav {
 }
 
 .social-links-menu svg:hover path {
-    fill: var(--purple) !important;
+  fill: var(--purple) !important;
 }
 
 header {
@@ -119,21 +117,18 @@ header {
   margin-bottom: 20px;
 
   letter-spacing: -0.4px;
-   
-  
 }
 
 .logo {
   width: 70px;
   z-index: 10;
   position: relative;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.1);
 }
-
 
 .logo img {
   width: 100%;
@@ -146,7 +141,6 @@ header {
 }
 
 .home span {
-
   font-weight: var(--weight-bold);
   font-size: var(--size-heading);
   display: block;
@@ -161,8 +155,6 @@ header {
   color: transparent; /* fallback */
   transition: all 0.3s ease;
 }
-
-
 
 .home .header-container {
   margin-bottom: 40px;
@@ -233,27 +225,24 @@ header {
 }
 
 .about .title {
- 
   font-weight: var(--weight-regular);
   font-size: 13px;
 }
 
 .about .label {
   font-size: 9px;
-    font-weight: var(--weight-thicker);
-    color: var(--darkgreen);
-    background-color: var(--green);
-    padding: 0px 16px;
-    border-radius: 100px;
-    line-height: 26px;
- 
+  font-weight: var(--weight-thicker);
+  color: var(--darkgreen);
+  background-color: var(--green);
+  padding: 0px 16px;
+  border-radius: 100px;
+  line-height: 26px;
 }
 
 .about .company {
   color: var(--lightgray);
   font-size: 12px;
   font-weight: var(--weight-medium);
-
 }
 
 .about .location {
@@ -262,14 +251,13 @@ header {
   display: block;
   align-self: flex-start;
   font-weight: var(--weight-medium);
- 
 }
 
 .about .date {
   color: var(--lightgray);
   font-size: 12px;
- 
-    font-weight: var(--weight-medium);
+
+  font-weight: var(--weight-medium);
 }
 
 .about .column {
@@ -307,16 +295,16 @@ footer {
   font-size: 12px;
   padding: 40px 0;
   margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .dm-switch-container {
-    position: absolute;
-    right: 0;
-    top: -20px;
+  position: absolute;
+  right: 0;
+  top: -20px;
 }
 
 .projects .header-container {
@@ -369,14 +357,14 @@ footer {
 }
 
 .dark-mode .nm-icon svg path {
-    fill: #fff;
+  fill: #fff;
 }
 .main-menu a.active {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .dark-mode .main-menu a.active {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .project-card .tech {
@@ -396,7 +384,7 @@ footer {
 }
 
 .project-card .footer a:hover {
-    color: var(--purple) !important;
+  color: var(--purple) !important;
 }
 
 .project-card .footer a svg {
@@ -414,25 +402,23 @@ footer {
 }
 
 .contact .header-container a:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 /* =============================
      Desktop Styles (min-width: 900px)
      ============================= */
 
-
 @media (min-width: 900px) {
-
-main.about, main.technologies, main.projects {
+  main.about,
+  main.technologies,
+  main.projects {
     margin-top: 100px;
-}
+  }
 
-.dm-switch-container {
-   
+  .dm-switch-container {
     top: auto;
-}
-
+  }
 
   .technologies-container > figure {
     width: 100%;
@@ -462,18 +448,18 @@ main.about, main.technologies, main.projects {
   }
 
   .technologies-container svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-.technologies .header-container {
+  .technologies .header-container {
     margin-bottom: 200px;
-}
+  }
 
   .technologies-container figure {
-   width: 100%;
-}
+    width: 100%;
+  }
   .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -534,9 +520,10 @@ main.about, main.technologies, main.projects {
     align-items: center;
     text-align: right;
     display: flex;
-    
+
     z-index: auto;
-    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    transition: background-color 0.4s ease, color 0.4s ease,
+      border-color 0.4s ease;
   }
   .off-screen-menu.main-menu ul {
     display: flex;
@@ -565,7 +552,8 @@ main.about, main.technologies, main.projects {
     max-width: none;
   }
 
-  .home .header-container h1, .home .header-container span{
+  .home .header-container h1,
+  .home .header-container span {
     font-size: 38px;
     letter-spacing: -1px;
   }
@@ -578,7 +566,6 @@ main.about, main.technologies, main.projects {
 
   .header {
     font-size: var(--size-heading-d);
-    
   }
 
   .about-header-section p {
@@ -589,103 +576,97 @@ main.about, main.technologies, main.projects {
   .about-header-section {
     margin-bottom: 50px;
     width: 70%;
-}
+  }
 
-.about .title {
+  .about .title {
     font-size: 20px;
     line-height: 28px;
-}
+  }
 
-.about .column {
-  flex-direction: row;
-          gap: 20px;
-}
-.about-container {
-  padding: 20px 0;
-}
+  .about .column {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .about-container {
+    padding: 20px 0;
+  }
 
-.about-work-section {
-  margin-bottom: 50px;
-}
+  .about-work-section {
+    margin-bottom: 50px;
+  }
 
-.technologies-container {
-  margin-bottom: 80px;
-}
+  .technologies-container {
+    margin-bottom: 80px;
+  }
 
-.project-card .title {
-  font-size: 28px;
-  
-}
+  .project-card .title {
+    font-size: 28px;
+  }
 
-.project-card .description {
-  font-weight: var(--weight-light);
-  font-size: 18px;
-}
+  .project-card .description {
+    font-weight: var(--weight-light);
+    font-size: 18px;
+  }
 
+  .project-card .tech span {
+    font-size: 16px;
+  }
 
+  .project-card .footer a {
+    font-size: 16px;
+  }
 
-.project-card .tech span {
-  font-size: 16px;
-}
+  .project-card {
+    box-shadow: 2px 2px 100px 0px #00000033;
+  }
 
-.project-card .footer a {
-  font-size: 16px;
-}
+  .projects .header-container {
+    margin-bottom: 100px;
+  }
 
-.project-card {
-  box-shadow: 2px 2px 100px 0px #00000033;
-}
-
-.projects .header-container {
-  margin-bottom: 100px;
-}
-
-.project-card .info {
+  .project-card .info {
     padding: 25px;
-}
+  }
 
-.project-card .footer {
-  margin-top: 30px;
-}
+  .project-card .footer {
+    margin-top: 30px;
+  }
 
-main.contact {
+  main.contact {
     margin-top: 20vh;
-}
+  }
 
-.contact .header {
+  .contact .header {
     font-size: 38px;
     letter-spacing: -1px;
     margin-bottom: 50px;
-}
+  }
 
-.contact .header-container a {
+  .contact .header-container a {
     font-size: 38px;
     letter-spacing: -1px;
-}
+  }
 
-.logo {
+  .logo {
     width: 100px;
-}
+  }
 
   footer {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     padding: 40px 0;
-}
-
-  
+  }
 }
 
 @media (min-width: 1160px) {
-  .home .header-container h1, .home .header-container span {
+  .home .header-container h1,
+  .home .header-container span {
     font-size: 58px;
   }
 
-   .off-screen-menu.main-menu ul {
-    
+  .off-screen-menu.main-menu ul {
     gap: 50px;
- 
   }
 
   .contact .header-container a {
